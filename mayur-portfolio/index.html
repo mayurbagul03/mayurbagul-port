@@ -2,41 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div class="main-container bg-stone-600 w-full">
-      <div class="nav-bar max-w-full flex justify-around bg-dar pt-5 pb-5">
-        <div class="logo size-20">
-          <img src="./src/logo-mb.png" alt="Logo" />
+    <div
+      class="main-container bg-transparent w-full overflow-x-hidden bg-linear-to-r/oklch from-indigo-500 to-teal-400"
+    >
+      <div class="nav-bar max-w-full mb-5 flex justify-around bg-dar pt-5 pb-5">
+        <div
+          class="font-extrabold w-30 mt-3.5 animate-pulse text-slate-700 italic text-4xl underline decoration-solid"
+        >
+          MB.
         </div>
         <div class="cont-1 w-96">
           <ul class="flex gap-10 justify-around font-semibold pt-5 pb-5">
             <li
-              class="hover:bg-slate-700 hover:text-white p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
+              class="hover:bg-slate-700 hover:text-white cursor-pointer p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
             >
               Home
             </li>
             <li
-              class="hover:bg-slate-700 hover:text-white p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
+              class="hover:bg-slate-700 hover:text-white cursor-pointer p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
             >
               Projects
             </li>
             <li
-              class="hover:bg-slate-700 hover:text-white p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
+              class="hover:bg-slate-700 hover:text-white cursor-pointer p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
             >
               About
             </li>
             <li
-              class="hover:bg-slate-700 hover:text-white p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
+              class="hover:bg-slate-700 hover:text-white cursor-pointer p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
             >
               Skills
             </li>
             <li
-              class="hover:bg-slate-700 hover:text-white p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
+              class="hover:bg-slate-700 hover:text-white cursor-pointer p-2 transition duration-300 ease-in rounded-sm font-bold text-xl"
             >
               Contact
             </li>
@@ -51,62 +81,168 @@
             alt="profile photo"
           />
         </div>
-        <!-- <div class="section-1 w-xl h-full mr-25 mb-5 p-5">
-          <div id="scrollText">
-            <h1 class="font-bold text-white">-Mayur Bagul</h1>
-            <marquee width="40%" direction="Left" height="20px">
-              <h2 class="font-semibold text-yellow-50">
-                I am a Full Stack Developer
-              </h2>
-            </marquee>
-          </div>
-          <p
-            class="text-white hover:text-black font-medium text-justify transition duration-300 text-xl"
-          >
-            <span class="text-4xl">Hi</span>, I'm Mayur Bagul a software
-            developer with 3+ years of experience building web applications and
-            a current Master's student in Computer Science at Western New
-            England University. I’ve worked on real-world projects using React,
-            Java, Node.js, and Spring Boot, with a focus on performance,
-            usability, and clean code. Previously, I contributed to large-scale
-            frontend systems, helped improve CI/CD workflows, and collaborated
-            with cross-functional teams to deliver features quickly and
-            reliably. I enjoy working on both frontend and backend, and I’m
-            comfortable with tools like Docker, GitLab, and RESTful APIs. Right
-            now, I’m looking for a Software Engineering Internshipxl where I can
-            continue learning, contribute to real projects, and grow alongside
-            experienced developers.
-          </p>
-        </div> -->
       </div>
       <div class="section-1 w-full h-full mr-25 mb-5 p-5">
         <div id="scrollText">
-          <h1 class="font-bold text-white flex justify-center">-Mayur Bagul</h1>
+          <h1 class="font-bold text-black flex justify-center animate-bounce">
+            -Mayur Bagul
+          </h1>
           <div
-            class="font-semibold text-yellow-50"
-            width="40%"
-            direction="Left"
-            height="20px"
+            id="text"
+            class="text-4xl font-bold text-slate-700 relative cursor-pointer"
           >
-            <h2>I am a Full Stack Developer</h2>
+            Full Stack Developer
           </div>
         </div>
         <p
-          class="text-white hover:text-black font-medium text-justify transition duration-300 text-xl"
+          class="text-black first-letter:text-6xl first-letter:mr-1 first-line:tracking-widest first-line:uppercase font-medium text-justify transition duration-300 text-xl"
         >
-          <span class="text-4xl">Hi</span>, I'm Mayur Bagul a software developer
-          with 3+ years of experience building web applications and a current
-          Master's student in Computer Science at Western New England
-          University. I’ve worked on real-world projects using React, Java,
-          Node.js, and Spring Boot, with a focus on performance, usability, and
-          clean code. Previously, I contributed to large-scale frontend systems,
-          helped improve CI/CD workflows, and collaborated with cross-functional
-          teams to deliver features quickly and reliably. I enjoy working on
-          both frontend and backend, and I’m comfortable with tools like Docker,
-          GitLab, and RESTful APIs. Right now, I’m looking for a Software
-          Engineering Internshipxl where I can continue learning, contribute to
-          real projects, and grow alongside experienced developers.
+          Hi, I'm Mayur Bagul a software developer with 3+ years of experience
+          building web applications and a current Master's student in Computer
+          Science at Western New England University. I’ve worked on real-world
+          projects using React, Java, Node.js, and Spring Boot, with a focus on
+          performance, usability, and clean code. Previously, I contributed to
+          large-scale frontend systems, helped improve CI/CD workflows, and
+          collaborated with cross-functional teams to deliver features quickly
+          and reliably. I enjoy working on both frontend and backend, and I’m
+          comfortable with tools like Docker, GitLab, and RESTful APIs. Right
+          now, I’m looking for a Software Engineering Internshipxl where I can
+          continue learning, contribute to real projects, and grow alongside
+          experienced developers.
         </p>
+      </div>
+      <div class="skills min-w-screen h-full mb-4 pb-3">
+        <div class="heading flex justify-center m-10 font-extrabold text-4xl">
+          Skills
+        </div>
+        <div class="flex justify-center gap-10 w-5xl flex-wrap ml-70">
+          <div
+            class="border-4 w-24 h-24 flex transition duration-300 hover:scale-110 hover:shadow-lg flex-col items-center justify-center"
+          >
+            <i class="fa-brands fa-python text-4xl"></i>
+            <div class="mt-1 text-sm">Python</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-postgresql-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">PostgreSQL</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="fas fa-snowflake text-4xl"></i>
+
+            <div class="mt-1 text-sm">Snowflake</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-azure-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">Azure</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-amazonwebservices-plain-wordmark text-4xl"></i>
+
+            <div class="mt-1 text-sm">AWS</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-apachespark-original text-4xl"></i>
+
+            <div class="mt-1 text-sm">Spark</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-docker-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">Docker</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-postgresql-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">Kubernates</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-apacheairflow-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">Airflow</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="fa-brands fa-html5 text-4xl"></i>
+
+            <div class="mt-1 text-sm">HTML</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="fa-brands fa-css text-4xl"></i>
+
+            <div class="mt-1 text-sm">CSS</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-javascript-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">JAVASCRIPT</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-postgresql-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">REACT.JS</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-postgresql-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">NODE.JS</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-mongodb-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">MONGODB</div>
+          </div>
+          <div
+            class="border-4 w-24 h-24 transition duration-300 hover:scale-110 hover:shadow-lg flex flex-col items-center justify-center"
+          >
+            <i class="devicon-postgresql-plain text-4xl"></i>
+
+            <div class="mt-1 text-sm">PostgreSQL</div>
+          </div>
+
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">PostgreSQL</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">Snowflake</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">Azure</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">AWS</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">Spark</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">Docker</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">Kubernates</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">Airflow</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">HTML</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">CSS</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">JAVASCRIPT</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">REACT.JS</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">NODE.JS</div> -->
+          <!-- <div class="border-2 pl-4 pr-4 pt-2 pb-2">MONGODB</div> -->
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
